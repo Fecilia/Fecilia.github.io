@@ -3,8 +3,8 @@ _site:
 	docker run \
         -v $(shell pwd):/srv/jekyll \
         -e BUNDLE_GEMFILE=site/Gemfile \
-        jekyll/builder:4.2.0 \
-        /bin/bash -c 'bundle install && bundle exec jekyll build --source site'
+        jekyll/builder:latest \
+        /bin/bash -c 'bundle install && bundle exec jekyll build --trace --source site'
 
 .PHONY: reset
 reset:

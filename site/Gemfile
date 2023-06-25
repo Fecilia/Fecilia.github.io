@@ -22,8 +22,9 @@
 #   gem "jekyll-sitemap"
 #   gem "jekyll-pagebreak", "~> 0.9.2"
 # end
+# source "https://rubygems.org"
 source "https://rubygems.org"
-
+gem 'jekyll', '~> 4.2'
 group :jekyll_plugins do
   gem "jekyll-bookshop", "2.2.2"
   gem "cloudcannon-jekyll-bookshop", "2.2.2"
