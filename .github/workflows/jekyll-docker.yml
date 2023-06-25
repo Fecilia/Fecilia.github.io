@@ -16,9 +16,9 @@ jobs:
         run: |
           docker run \
             -v ${{ github.workspace }}:/srv/jekyll \
-            -e BUNDLE_GEMFILE=site/Gemfile \
-            jekyll/builder:latest  \
-            /bin/bash -c 'chmod 777 /srv/jekyll && npm install  &&  npm audit fix --force && BUNDLE_GEMFILE=site/Gemfile bundle install && bundle exec jekyll build --trace --source site'
+        -e BUNDLE_GEMFILE=site/Gemfile \
+        jekyll/builder:4.2.0 \
+        /bin/bash -c 'bundle install && bundle exec jekyll build --source site'
 
       - name: Deploy to GHPages 🚀
         uses: peaceiris/actions-gh-pages@v3
