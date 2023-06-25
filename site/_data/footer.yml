@@ -1,0 +1,15 @@
+footer_menu__settings:
+  menu__items:
+    - title: '首页'
+      url: '/'
+    - title: '项目'
+      url: '/projects/'
+    - title: '概要'
+      url: '/elements/'
+    - title: '关于'
+      url: '/about/'
+    - title: '博客'
+      url: '/blog/'
+
+copyright_text_html: >-
+  <p> 2023 &copy; <a href="/">Opencodes</a>create by <a href="https://ahkevinxy.github.io/">ahKevinXy</a>.</p>
