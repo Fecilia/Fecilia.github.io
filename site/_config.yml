@@ -8,12 +8,10 @@ plugins:
   - jekyll-pagebreak
 
 # Multiple bookshops can be used on one website,
-# or different production / staging locations. 111122
+# or different production / staging locations.
 bookshop_locations:
   - ../components
-sass:
-  sass_dir: assets
-  style: compressed
+
 exclude:
   - postcss.config.js
   - node_modules
