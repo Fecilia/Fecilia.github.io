@@ -35,7 +35,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-pagebreak"
   gem 'jekyll-sass-converter', :git => "https://github.com/CloudCannon/jekyll-sass-converter.git"
-  gem 'jekyll-postcss-v2'
+  # gem 'jekyll-postcss-v2'
   gem 'jekyll-archives', '~> 2.2.1'
   gem 'jekyll-feed', '~> 0.15.1'
 
