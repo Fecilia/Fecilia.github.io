@@ -12,7 +12,8 @@ plugins:
 bookshop_locations:
   - ../components
 sass:
-  - assets/
+  sass_dir: assets
+  style: compressed
 exclude:
   - postcss.config.js
   - node_modules
