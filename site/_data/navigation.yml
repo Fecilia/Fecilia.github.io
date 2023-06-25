@@ -4,13 +4,13 @@ menu__settings:
   menu__items:
     - title: '首页'
       url: '/'
-    - title: '项目'
+    - title: '生活'
       url: '/projects/'
-    - title: '博客'
+    - title: '游记'
       url: '/blog/'
     - title: '更多'
       submenu:
       - url: '/about/'
         title: '关于'
-      - url: '/概要/'
-        title: 'Elements'
+      - url: '/Elements/'
+        title: '购物'
