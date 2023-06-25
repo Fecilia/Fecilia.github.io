@@ -24,7 +24,9 @@
 # end
 # source "https://rubygems.org"
 source "https://rubygems.org"
-gem 'jekyll', '~> 4.3.2'
+# gem 'jekyll', '~> 4.3.2'
+gem 'sass'
+gem 'sass-embedded', '~> 1.55'
 group :jekyll_plugins do
   gem "jekyll-bookshop", "2.2.2"
   gem "cloudcannon-jekyll-bookshop", "2.2.2"
@@ -32,5 +34,9 @@ group :jekyll_plugins do
   gem 'jekyll-tagging'
   gem "jekyll-sitemap"
   gem "jekyll-pagebreak"
-  gem 'sass-embedded', '~> 1.55'
+  gem 'jekyll-sass-converter', :git => "https://github.com/CloudCannon/jekyll-sass-converter.git"
+  gem 'jekyll-postcss-v2'
+  gem 'jekyll-archives', '~> 2.2.1'
+  gem 'jekyll-feed', '~> 0.15.1'
+
 end
