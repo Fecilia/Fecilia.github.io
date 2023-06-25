@@ -11,7 +11,8 @@ plugins:
 # or different production / staging locations. 111122
 bookshop_locations:
   - ../components
-
+sass:
+  - assets/
 exclude:
   - postcss.config.js
   - node_modules
