@@ -4,7 +4,7 @@ _site:
         -v $(shell pwd):/srv/jekyll \
         -e BUNDLE_GEMFILE=site/Gemfile \
         jekyll/builder:latest \
-        /bin/bash -c 'bundle update jekyll  && bundle update  && bundle install&& bundle exec jekyll build --trace --source site'
+        /bin/bash -c 'bundle install && bundle exec jekyll build --trace --source site'
 
 .PHONY: reset
 reset:

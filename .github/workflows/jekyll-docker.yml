@@ -18,7 +18,7 @@ jobs:
             -v ${{ github.workspace }}:/srv/jekyll \
             -e BUNDLE_GEMFILE=site/Gemfile \
             jekyll/builder:latest  \
-            /bin/bash -c 'chmod 777 /srv/jekyll && bundle update jekyll  &&bundle update && BUNDLE_GEMFILE=site/Gemfile bundle install && bundle exec jekyll build --trace --source site'
+            /bin/bash -c 'chmod 777 /srv/jekyll  BUNDLE_GEMFILE=site/Gemfile bundle install && bundle exec jekyll build --trace --source site'
 
       - name: Deploy to GHPages 🚀
         uses: peaceiris/actions-gh-pages@v3
